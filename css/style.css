@@ -1,0 +1,590 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style:none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+/* all common css end */
+/* particles part start */
+#particles-js{
+    width: 100%;
+    height: 611vh;
+    background-color: rgb(202, 64, 64);
+    max-width: 100%;
+    height: 611px;
+    position: relative;
+    z-index: 1;
+}
+#particles-js::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+/* particles part end */
+
+/* navbar part start */
+.navbar{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+
+}
+.navbar-brand{
+    font-family: 'Redressed', cursive;
+    font-size: 40px;
+    color: rgb(255, 255, 255) !important;
+}
+.nav-item{
+    padding: 20px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 1;
+}
+.nav-item .nav-link{
+    display: inline-block;
+    color: rgb(255, 255, 255) !important;
+    position: relative;
+}
+
+.nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 9px;
+    width: calc(100% - 30px);
+    height: 2px;
+    background: #ddd;
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.nav-item .nav-link:hover::after{
+    opacity: 1;
+}
+/* navbar part end */
+/* banner part start */
+#banner{
+    position: relative;
+    z-index: 1;
+}
+#particles-js{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.banner-text{
+    padding-top: 200px;
+}
+.banner-text h2{
+    color: rgb(255, 255, 255) !important;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.banner-text h1{
+    color: rgb(255, 255, 255) !important;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 20px 0;
+}
+.banner-text h3{
+    color: rgb(255, 255, 255) !important;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.banner-btn{
+    padding: 20px 0;
+}
+.banner-btn a{
+    font-size: 20px;
+    color: #ddd;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgb(255, 255, 255);
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.banner-btn a:hover{
+    background-color: #ddd;
+    color: #000;
+}
+/* banner part end */
+
+/* about part start */
+#about{
+    padding-top: 100px;
+}
+#about .img {
+    background: rgb(243, 242, 242);
+    width: 90%;
+}
+#about .img img{
+    width: 100%;
+}
+.about-text{
+   padding: 100px 0;
+}
+.about-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+.about-text h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgb(187, 187, 187);
+    padding: 15px 0;
+}
+.about-text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgb(77, 77, 77);
+}
+.about-text .icon{
+    padding: 20px 0;
+}
+.about-text .icon h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: rgb(77, 77, 77);
+    margin: 0 10px;
+}
+.about-text .icon a{
+   font-size: 25px;
+   text-decoration: none;
+   display: inline-block;
+   height: 50px;
+   width: 50px;
+   line-height: 50px;
+   text-align: center;
+   color: #000;
+   margin: 10px 10px;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+}
+.about-text .icon a:hover{
+    background: #000;
+    color: rgb(255, 255, 255);
+}
+/* about part end */
+
+/* Portfolio part start */
+#Portfolio{
+    padding-bottom: 100px;
+    background: rgb(221, 221, 221);
+}
+.Portfolio-head h2{
+    text-align: left;
+    font-size: 30px;
+    color: rgb(77, 77, 77);
+    font-weight: 700;
+    padding: 50px;
+}
+.potfolio-item1{
+    padding-bottom: 50px;
+}
+.card{
+    position: relative;
+}
+.card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.card .overlay:hover{
+    opacity: 1;
+}
+.overlay h3{
+    color: #ddd;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50%;
+    transform: translateY(-50%, -50%);
+    -webkit-transform: translateY(-50%, -50%);
+    -moz-transform: translateY(-50%, -50%);
+    -ms-transform: translateY(-50%, -50%);
+    -o-transform: translateY(-50%, -50%);
+}
+.overlay p{
+    color: #ddd;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+/* Portfolio part end */
+
+/* progressbar part start */
+#progressbar{
+    padding-bottom: 100px;
+}
+.progressbar-text{
+    padding: 100px 0;
+}
+.progressbar-text h2{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: rgb(77, 77, 77);
+}
+.progressbar-text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgb(77, 77, 77);
+    padding: 15px 0;
+}
+.progressbr{
+    margin-top: 100px;
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 25px 30px;
+}
+.progressbr .bar{
+    margin: 20px 0;
+}
+.progressbr .bar:first-child{
+    margin-top: 0px;
+}
+.progressbr .bar .info{
+    margin-bottom: 5px;
+}
+.progressbr .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    -webkit-animation: showText 0.5s 1.5s linear forwards;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+.progressbr .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: #f0f0f0;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),0px 1px rgba(255, 255, 255, 0.8);
+    transform-origin: left;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    -webkit-animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform-origin: left;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    -webkit-animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1);
+}
+}
+.bar .progress-line.HTML span{
+    width: 90%;
+}           
+.bar .progress-line.CSS span{
+    width: 70%;
+}           
+.bar .progress-line.Bootstrap span{
+    width: 80%;
+}           
+.bar .progress-line.jQuery span{
+    width: 60%;
+}   
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation:  showText2 0.5s 1.5s linear forwards;
+    -webkit-animation:  showText2 0.5s 1.5s linear forwards;
+}              
+.bar .progress-line span::after{
+    position: absolute;
+    content: "80%";
+    right: 0;
+    top: -28px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+    -webkit-animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+.bar .progress-line.HTML span::after{
+    content: "90%";
+}           
+.bar .progress-line.CSS span::after{
+    content: "70%";
+}           
+.bar .progress-line.Bootstrap span::after{
+    content: "80%";
+}           
+.bar .progress-line.jQuery span::after{
+    content: "60%";
+}           
+/* progressbar part end */
+
+/* work part start */
+#work h2{
+    padding: 0 110px;
+}
+.work{
+    background: url(../image/counter-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    margin: 50px 0;
+    position: relative;
+}
+.work::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.inner-work{
+    display: flex;
+    justify-content: space-between;
+}
+.inner-work h3{
+    color: #fff;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+/* work part end */
+
+/* blog part start */
+#blog{
+    padding: 50px 0;
+}
+#blog h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 50px;
+    color: rgb(77, 77, 77);
+}
+
+/* blog part end */
+
+/* contact part start */
+#contact{
+    background: rgb(228, 228, 228);
+}
+.contact-head{
+    text-align: center;
+}
+.contact-head h2{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(77, 77, 77);
+    padding: 25px 0;
+}
+.contact-text h3{
+    font-size: 35px;
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(77, 77, 77);
+}
+.contact-text p{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(77, 77, 77);
+    font-size: 18px;
+}
+.address h5,h6{
+    margin-left: 40px;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(77, 77, 77);
+}
+.address{
+    position: relative;
+    padding: 20px 0;
+}
+.address .icon{
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.address .icon a{
+    color: rgb(77, 77, 77);
+    font-size: 20px;
+}
+
+.input-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-text input {
+    padding: 12px 12px 12px 12px;
+    width: 49%;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.input-text input {
+    padding: 12px 12px 12px 12px;
+    width: 49%;
+    margin-bottom: 10px;
+    /* outline: none; */
+}
+
+.input-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {}
+
+textarea {
+    outline: none;
+    width: 100%;
+    padding: 12px;
+    color: #666;
+}
+
+.sub-ret {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sub-ret input {
+    border: none;
+    background: transparent;
+    color: #000;
+    padding: 12px 35px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.sub-ret input:hover{
+    background: rgb(155, 39, 39);
+    color: #fff;
+}
+
+/* contact part end */
+/* footer */
+footer{
+    background: rgb(155, 39, 39);
+    height: 50px;  
+}
+footer h4{
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    line-height: 50px;
+}
+/* footer end */
